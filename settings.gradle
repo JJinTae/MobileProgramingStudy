@@ -1,2 +1,4 @@
 rootProject.name='MobileProgramingStudy'
 include ':app'
+include ':stdJavaPrograms'
+include ':interfacePrograms'
