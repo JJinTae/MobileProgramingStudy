@@ -14,11 +14,19 @@ public class MyinterfaceProg {
 
         countries[1] = new Country("Thailand", 514000);
         System.out.println("Average area: " + average(countries));
-
-
+        System.out.println("JunTae Kim's Homework!");
     }
 
-    public static double average(Country[] objects) {
+    public static double average(Measurable[] objects) {
+        if(objects.length == 0){return 0;}
+        double sum = 0;
+        for(Measurable obj : objects){
+            sum = sum+obj.getMeasure();
+        }
+        return sum / objects.length;
+    }
+
+    /*public static double average(Country[] objects) {
         if(objects.length == 0){return 0;}
         double sum = 0;
         for(Country obj : objects){
@@ -34,5 +42,5 @@ public class MyinterfaceProg {
             sum = sum+obj.getBalance();
         }
         return sum / objects.length;
-    }
+    }*/
 }
